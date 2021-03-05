@@ -1,0 +1,39 @@
+* {
+    box-sizing: border-box;
+}
+
+.jumbotron{
+    background-color:#D72F30;
+}
+
+h1{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+
+.team-container {
+    display: flex;
+    width: 100%;
+    margin: auto;
+    justify-content: center;
+    justify-content: space-evenly;
+}
+
+.team {
+    
+    width: 80%;
+    margin: 5px;
+}
+
+.employee-card {
+
+    display: flex;
+    border: 1px solid red;
+    padding: 10px;
+    width: 80%;
+    
+    
+    
+}
