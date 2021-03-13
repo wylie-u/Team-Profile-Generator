@@ -43,6 +43,7 @@ const managerFile = () =>
       const officeNumber = answers.officeNumber;
       // calling manager class
       const manager = new Manager(name, id, email, officeNumber);
+    //   pushing manager into empty array 
       teamNumber.push(manager)
       addMember();
     });
@@ -112,6 +113,7 @@ const engineerFile = () =>
       const github = answers.github;
       // calling engineer class
       const engineer = new Engineer(name, id, email, github);
+    //   pushing engineer into empty array 
       teamNumber.push(engineer)
       addMember();
     });
@@ -143,56 +145,98 @@ const internFile = () =>
       const school = answers.school;
       // calling intern class
       const intern = new Intern(name, id, email, school);
+      // pushing intern into empty array 
       teamNumber.push(intern)
       addMember();
     });
 
     //html 
 
-    const generateHTML = (answers) =>
+    function createTeam () {
+    for (let i = 0; i < teamNumber.length; i ++) {
 
-    
-`<body>
-<div class="jumbotron jumbotron-fluid">
-      <h1>My Team</h1>
-  </div>
-  <div class="team-container">
-    <div class="row team">
-        <div class="col-md-3">
-          <div class="card">
-            <div class="card-body">
-              <h5 class="card-title">Special title treatment</h5>
-              <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-3">
-          <div class="card">
-            <div class="card-body">
-              <h5 class="card-title">Special title treatment</h5>
-              <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-3">
-            <div class="card">
-              <div class="card-body">
-                <h5 class="card-title">Special title treatment</h5>
-                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
+        `<!DOCTYPE html>
+        <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0 shrink-to-fit=no">
+            <title>Document</title>
+            <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+            <link rel="stylesheet" href="dist/style.css">
+        </head>
+        <body>
+            <div class="jumbotron jumbotron-fluid">
+                  <h1>My Team</h1>
               </div>
-            </div>
-          </div>
-      </div>
-      
-          
-          
-      
-</body>
-</html>`
+              <div class="team-container">
+                <div class="row team">
+                    <div class="col-md-4">
+                      <div class="card">
+                        <div class="card-body">
+                          <h5 class="card-title">${teamNumber[i].name}</h5>
+                          <p class="card-text">${teamNumber[i].role}</p>
+                          <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-4">
+                      <div class="card">
+                        <div class="card-body">
+                          <h5 class="card-title">Special title treatment</h5>
+                          <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                          <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card">
+                          <div class="card-body">
+                            <h5 class="card-title">Special title treatment</h5>
+                            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                          </div>
+                        </div>
+                      </div>
+                  </div>
+                <div class="row team">
+                  <div class="col-md-4">
+                    <div class="card">
+                      <div class="card-body">
+                        <h5 class="card-title">Special title treatment</h5>
+                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>      
+               
+              
+        </body>
+        </html>`
+    };
+
+    fs.writeFile('index.html', 'Team Profile', function (err) {
+        if (err) throw err;
+        console.log('Saved!');
+      });
+}
+    
+
 
     // write file
+    // const init = () => {
+        
+    //       try {
+    //         const html = createTeam(teamNumber[i]);
+    //         fs.writeFileSync('index.html', html);
+    //         console.log('Successfully wrote to index.html');
+    //       } catch (error) {
+    //         console.log(error);
+    //       }
+    //     // });
+    //   };
+      
+    //   init();
 
 managerFile ();
