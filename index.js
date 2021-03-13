@@ -216,11 +216,13 @@ const internFile = () =>
         </html>`
     };
 
-    fs.writeFile('index.html', 'Team Profile', function (err) {
-        if (err) throw err;
-        console.log('Saved!');
-      });
+    // fs.writeFile('index.html', , function (err) {
+    //     if (err) throw err;
+    //     console.log('Saved!');
+    //   });
 }
+
+
     
 
 
@@ -239,4 +241,4 @@ const internFile = () =>
       
     //   init();
 
-managerFile ();
+// managerFile ();
