@@ -43,20 +43,13 @@ const managerFile = () =>
     ])
     .then((data) => {
       // data represents values that are passed in
+        const id = 0;
         const manager = new Manager(data.name, data.id, data.email, data.officeNumber);
         team.push(manager);
         addMember();
+      
 
-
-    //   const name = answers.name;
-    //   const id = 1;
-    //   const email = answers.email;
-    //   const officeNumber = answers.officeNumber;
-    //   // calling manager class
-    //   const manager = new Manager(name, id, email, officeNumber);
-    // //   pushing manager into empty array 
-    //   teamNumber.push(manager)
-    //   addMember();
+    
     });
 
 // 1. prompt for manager's data
@@ -104,7 +97,7 @@ const engineerFile = () =>
       },
       {
         // email address
-        message: "What is your team manager's email address?",
+        message: "What is your engineer's email address?",
         name: "email",
       },
       {
@@ -116,20 +109,11 @@ const engineerFile = () =>
     ])
 
     .then((data) => {
-
+      const id = team.length + 1;
       const engineer = new Engineer(data.name, data.id, data.email, data.github);
-        team.push(engineer);
-        addMember();
-
-
-    //   const name = answers.name;
-    //   const id = team.length + 1;
-    //   const email = answers.email;
-    //   const github = answers.github;
-    //   // calling engineer class
-    //   const engineer = new Engineer(name, id, email, github);
-    // //   pushing engineer into empty array 
-    //   teamNumber.push(engineer)
+      team.push(engineer);
+      addMember();
+      
       
     });
 
@@ -155,27 +139,18 @@ const internFile = () =>
       },
     ])
     .then((data) => {
-
+      const id = team.length + 1;
       const intern = new Intern(data.name, data.id, data.email, data.school);
       team.push(intern);
       addMember();
+      
 
-      // const name = answers.name;
-      // const id = team.length + 1;
-      // const email = answers.email;
-      // const school = answers.school;
-      // // calling intern class
-      // const intern = new Intern(name, id, email, school);
-      // // pushing intern into empty array 
-      // teamNumber.push(intern)
-      // addMember();
+      
     });
     
   
   function createTeam() {
     // Direct which folder to go to when creating a new one
-    // const fileOut = path.resolve(__dirname, "dist");
-    // const outPath = path.join(fileOut, 'team.html')
     fs.writeFile(outputPath, teamGenerator(team), function (err) {
         if (err) throw err;
         console.log('team.html has been generated :)');
