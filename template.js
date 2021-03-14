@@ -14,7 +14,7 @@ const generateTeam = allMembers => {
                             <ul class="list-group">
                               <li class="list-group-item">Employee ID: ${manager.getId()}</li>
                               <li class="list-group-item">Email: <a href="mailto:${manager.getEmail()}">${manager.getEmail()}</a></li>
-                              <li class="list-group-item">${manager.getOfficeNumber()}</li>
+                              <li class="list-group-item"> Office Number: ${manager.getOfficeNumber()}</li>
                             </ul>
                             </div>
                           </div>
@@ -61,7 +61,7 @@ const generateTeam = allMembers => {
                             <ul class="list-group">
                               <li class="list-group-item">Employee ID: ${intern.getId()}</li>
                               <li class="list-group-item">Email: <a href="mailto:${intern.getEmail()}">${intern.getEmail()}</a></li>
-                              <li class="list-group-item">${intern.getSchool()}</li>
+                              <li class="list-group-item">University: ${intern.getSchool()}</li>
                             </ul>
                             </div>
                           </div>

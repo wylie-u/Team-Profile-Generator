@@ -43,8 +43,8 @@ const managerFile = () =>
     ])
     .then((data) => {
       // data represents values that are passed in
-        const id = 0;
-        const manager = new Manager(data.name, data.id, data.email, data.officeNumber);
+        const id = 1;
+        const manager = new Manager(data.name, id, data.email, data.officeNumber);
         team.push(manager);
         addMember();
       
@@ -109,8 +109,8 @@ const engineerFile = () =>
     ])
 
     .then((data) => {
-      const id = team.length + 1;
-      const engineer = new Engineer(data.name, data.id, data.email, data.github);
+      let id = team.length + 1;
+      const engineer = new Engineer(data.name, id, data.email, data.github);
       team.push(engineer);
       addMember();
       
@@ -123,7 +123,7 @@ const internFile = () =>
       {
         // name
         message: "What is the name of your intern",
-        name: "intern",
+        name: "name",
       },
       {
         // email address
@@ -139,8 +139,8 @@ const internFile = () =>
       },
     ])
     .then((data) => {
-      const id = team.length + 1;
-      const intern = new Intern(data.name, data.id, data.email, data.school);
+      let id = team.length + 1;
+      const intern = new Intern(data.name, id, data.email, data.school);
       team.push(intern);
       addMember();
       

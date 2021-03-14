@@ -1,0 +1,65 @@
+* {
+    box-sizing: border-box;
+}
+
+.jumbotron{
+    background-color:#D72F30;
+}
+
+h1{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+
+.team-container {
+    /* display: flex; */
+    width: 80%;
+    margin: auto;
+    justify-content: center;
+    justify-content: space-evenly;
+}
+
+.team {
+    
+    margin: 5px;
+    justify-content: center;
+}
+
+.card {
+
+    margin: 5px;
+}
+
+.card-header {
+
+    padding: 30px;
+    background-color:blue;
+    color:white;
+}
+
+
+
+ul {
+
+    margin-top: 25px;
+    list-style: none;
+    
+
+}
+
+li{
+
+    margin: 5px;
+
+}
+
+/* @media (min-width: 576px) { 
+    
+    .card {
+        margin: 5px;
+    }
+
+} */
+
