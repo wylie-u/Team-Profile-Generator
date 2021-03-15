@@ -10,13 +10,17 @@ Upon launching the application, the user is asked for information about the team
 
 
 ## Table of Contents
+*  [Video-Walk-Through](#Walk-Through)
  * [User Story](#User-Story)
  * [Building Tools](#Building-Tools) 
+ * [Installation](#Installation) 
  * [Credits](#Credits)
  * [Demo](#Demo)
 
 
+## Walk-Through
 
+[Video-Walk-Through](https://drive.google.com/file/d/1s-I6YL0zfBCCHlkh7p4BuEWcvevmDkGl/view)
 
 ## User Story
 <pre><code>AS A manager
@@ -31,13 +35,14 @@ SO THAT I have quick access to their emails and GitHub profiles
  * Bootstrap
  * Node.js
 
+ ## Installation
+ Run node.js and perform an npm install to bring in all necesarry node modules. The program is run with the command "node app.js"
+
 
 ## Credits
 1. https://getbootstrap.com/
 2. https://www.w3schools.com
 3. https://www.npmjs.com/package/inquirer
 
-## Demo
 
-![Demo](https://drive.google.com/file/d/1s-I6YL0zfBCCHlkh7p4BuEWcvevmDkGl/view)
 
