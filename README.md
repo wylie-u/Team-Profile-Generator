@@ -22,6 +22,8 @@ Upon launching the application, the user is asked for information about the team
 
 [Video-Walk-Through](https://drive.google.com/file/d/1s-I6YL0zfBCCHlkh7p4BuEWcvevmDkGl/view)
 
+![Site Photo](/dist/Document.png)
+
 ## User Story
 <pre><code>AS A manager
 I WANT to generate a webpage that displays my team's basic info

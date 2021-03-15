@@ -27,7 +27,7 @@ h1{
 
 .team {
     
-    display: flex;
+    /* display: flex; */
     justify-content: center;
 
 }
@@ -62,11 +62,5 @@ li{
 
 }
 
-/* @media (min-width: 768px) { 
-    
-    .card {
-        margin: 5px;
-    }
 
-} */
 
