@@ -2,19 +2,23 @@
     box-sizing: border-box;
 }
 
-.jumbotron{
+.jumbotron {
     background-color:#D72F30;
+
+
 }
 
+.jumbotron h1{
+    text-align: center;
+    justify-content: center;
+}
 h1{
     display: flex;
-    justify-content: center;
-    text-align: center;
     color: white;
 }
 
 .team-container {
-    /* display: flex; */
+    
     width: 80%;
     margin: auto;
     justify-content: center;
@@ -23,18 +27,22 @@ h1{
 
 .team {
     
-    margin: 5px;
+    display: flex;
     justify-content: center;
+
 }
 
 .card {
 
+    box-shadow: 10px 10px 5px grey;
+    display: flex;
     margin: 5px;
+    flex-wrap: wrap;
+
 }
 
 .card-header {
 
-    padding: 30px;
     background-color:blue;
     color:white;
 }
@@ -46,7 +54,6 @@ ul {
     margin-top: 25px;
     list-style: none;
     
-
 }
 
 li{
@@ -55,7 +62,7 @@ li{
 
 }
 
-/* @media (min-width: 576px) { 
+/* @media (min-width: 768px) { 
     
     .card {
         margin: 5px;

@@ -8,8 +8,8 @@ const generateTeam = allMembers => {
                           <div class="card">
                             <div class="card-body">
                               <div class="card-header">
-                              <h2 class="card-title">${manager.getName()}</h2>
-                              <h4 class="card-text">${manager.getRole()}</h4>
+                              <h1 class="card-title">${manager.getName()}</h1>
+                              <h4 class="card-text"><i class="fas fa-mug-hot"></i>${manager.getRole()}</h4>
                             </div>
                             <ul class="list-group">
                               <li class="list-group-item">Employee ID: ${manager.getId()}</li>
@@ -31,8 +31,8 @@ const generateTeam = allMembers => {
                           <div class="card">
                             <div class="card-body">
                               <div class="card-header">
-                              <h2 class="card-title">${engineer.getName()}</h2>
-                              <h4 class="card-text">${engineer.getRole()}</h4>
+                              <h1 class="card-title">${engineer.getName()}</h1>
+                              <h4 class="card-text"><i class="fas fa-briefcase"></i>${engineer.getRole()}</h4>
                             </div>
                             <ul class="list-group">
                               <li class="list-group-item">Employee ID: ${engineer.getId()}</li>
@@ -55,8 +55,8 @@ const generateTeam = allMembers => {
                           <div class="card">
                             <div class="card-body">
                               <div class="card-header">
-                              <h2 class="card-title">${intern.getName()}</h2>
-                              <h4 class="card-text">${intern.getRole()}</h4>
+                              <h1 class="card-title">${intern.getName()}</h1>
+                              <h4 class="card-text"><i class="fas fa-user-graduate"></i>${intern.getRole()}</h4>
                             </div>
                             <ul class="list-group">
                               <li class="list-group-item">Employee ID: ${intern.getId()}</li>
