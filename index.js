@@ -6,7 +6,7 @@ const Engineer = require("./library/engineer");
 const Manager = require("./library/manager");
 const Intern = require("./library/intern");
 
-const teamGenerator = require("./template");
+const teamGenerator = require("./team");
 
 
 const OUTPUT_DIR = path.resolve(__dirname, "dist");
